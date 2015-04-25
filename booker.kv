@@ -1,0 +1,16 @@
+
+<Booker>:
+    textview:textview
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            id: textview
+            
+        BoxLayout:
+            size_hint_y: None
+            Button:
+                text: "Preview"
+                on_press: root.current -= 1
+            Button:
+                text: "Next"
+                on_press: root.current += 1
